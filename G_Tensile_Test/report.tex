@@ -1,0 +1,291 @@
+\documentclass[12pt]{report}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage[table]{xcolor}
+\usepackage{gensymb}
+
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{Part \thechapter}{20pt}{\Huge}
+
+\title{\Huge \textbf{AM2540}\\Strength of Materials Lab\\Code \textbf{G}}
+\author{\textbf{D V Anantha Padmanabh}\\
+ME23B012}
+\date{August 2024}
+
+\renewcommand{\thesection}{\arabic{section}}
+\begin{document}
+\maketitle
+
+\chapter{Tension Test:\\Mechanical Behavior of Mild Steel}
+
+\section{Aim}
+To find the mechanical properties of mild steel.
+
+\section{Theory}
+Steel, an iron-carbon alloy, is extensively used for a wide variety of engineering
+applications. In design of steel components or structures it is important to quantify its
+mechanical properties. In a simple tension test, typically a round tensile bar is subject to
+tensile deformation and the force-deflection curve till failure is obtained. Using the
+experimental data several mechanical properties of the material can be determined.
+\subsection*{Engineering stress in a tensile bar (S): Measure of the intensity of the internal force
+    (Stress)}
+\[
+    S = \frac{F}{A_0}
+\]
+where \( F \) is the axial force and \( A_0 \) is the original cross-sectional area.
+
+
+\subsection*{Engineering strain (e): Measure of deformation}
+\[
+    e = \frac{\Delta l}{l_0}
+\]
+where \( \Delta l \) is the change in length and \( l_0 \) is the original length.
+
+
+\subsection*{True stress (\(\sigma \)): Axial force per unit current area}
+\[
+    \sigma = \frac{F}{A} = S(1+e)
+\]
+True stress is the stress calculated using the instantaneous area of the bar.
+
+\subsection*{True strain (\(\epsilon\)): calculated using the instantaneous gauge length}
+\[
+    \epsilon = \int_{l_0}^{l} \frac{dl}{l} = \ln \left( \frac{l}{l_0} \right) = \ln(1+e)
+\]
+True strain is the strain calculated using the instantaneous length.
+
+\section{Procedure}
+\begin{enumerate}
+    \item Find the dimensions of the round tensile bar (length of the uniform CS, average
+          diameter).
+    \item Get familiarized with the machine and the devices for measurement of force and
+          deflection. Install the specimen in the machine avoiding any significant load
+          developing during the installation.
+    \item While one end is fixed, provide displacement at the other end obtained by
+          hydraulic pressure.
+    \item Observe the plastic deformation, necking and finally fracture during the process
+          of loading.
+    \item Record the force and the corresponding deflection. Besides these data points also
+          record the points where any sudden change in data pattern occurs.
+    \item In the data table note at what value of load you first notice the localization of
+          deformation (formation of a necked region).
+    \item After failure, record the characteristic features of the failure surface.
+\end{enumerate}
+
+\section{Observations}
+\subsection*{Pre-Test Data}
+\begin{itemize}
+    \item Length of the uniform cross-section: \( l_0 = 29.4869 \) mm
+    \item Diameters at three different locations: \( D_1 = 8.21 \) mm, \( D_2 = 8.26 \) mm, \( D_3 = 8.28 \) mm
+    \item Average diameter, \( D = \frac{D_1 + D_2 + D_3}{3} = 8.25 \) mm
+\end{itemize}
+
+\subsection*{Test Data}
+The following table contains a small sample of the test data obtained from
+the experiment. The complete data is plotted in the following graph.\\
+
+\begin{tabular}{|p{0.5cm}|p{2.1cm}|p{1.5cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+    \hline
+    Sl. No. & Applied Extension (mm) & Axial Force (N) & Engg. Stress, S (N/mm\(^2\)) & Engg. Strain, e (mm/mm) & True Stress, \(\sigma\) (N/mm\(^2\)) & True Strain, \(\epsilon\) (mm/mm) \\
+    \hline
+    1       & 0.0                    & 0.0             & 0.0                          & 0.0                     & 0.0                                  & 0.0                               \\
+    2       & 0.000230789            & 1e-10           & 1.8707e-12                   & 7.8268e-06              & 1.8707e-12                           & 7.8268e-06                        \\
+    3       & 0.000749588            & 17.039          & 0.3187                       & 2.5421e-05              & 0.3187                               & 2.5420e-05                        \\
+    4       & 0.001289368            & 32.8541         & 0.6146                       & 4.3726e-05              & 0.6146                               & 4.3725e-05                        \\
+    5       & 0.001289368            & 51.4189         & 0.9619                       & 4.3726e-05              & 0.9619                               & 4.3725e-05                        \\
+    6       & 0.000976563            & 67.5203         & 1.2631                       & 3.3118e-05              & 1.2631                               & 3.3117e-05                        \\
+    7       & 0.001024246            & 84.9083         & 1.5884                       & 3.4735e-05              & 1.5884                               & 3.4735e-05                        \\
+    8       & 0.001264572            & 100.7553        & 1.8848                       & 4.2885e-05              & 1.8849                               & 4.2884e-05                        \\
+    9       & 0.001205444            & 117.0793        & 2.1902                       & 4.0880e-05              & 2.1902                               & 4.0879e-05                        \\
+    10      & 0.001256943            & 134.3413        & 2.5131                       & 4.2627e-05              & 2.5132                               & 4.2626e-05                        \\
+    11      & 0.001607895            & 150.2513        & 2.8107                       & 5.4529e-05              & 2.8108                               & 5.4527e-05                        \\
+    12      & 0.001718521            & 166.3203        & 3.1113                       & 5.8280e-05              & 3.1115                               & 5.8279e-05                        \\
+    13      & 0.00148201             & 182.0723        & 3.4060                       & 5.0259e-05              & 3.4061                               & 5.0258e-05                        \\
+    14      & 0.001871109            & 199.5723        & 3.7334                       & 6.3455e-05              & 3.7336                               & 6.3453e-05                        \\
+    15      & 0.002210617            & 215.3243        & 4.0281                       & 7.4969e-05              & 4.0283                               & 7.4966e-05                        \\
+    16      & 0.0027771              & 231.7433        & 4.3352                       & 9.4180e-05              & 4.3356                               & 9.4176e-05                        \\
+    17      & 0.002473831            & 246.8583        & 4.6179                       & 8.3895e-05              & 4.6183                               & 8.3892e-05                        \\
+    18      & 0.002426147            & 263.2773        & 4.9251                       & 8.2278e-05              & 4.9255                               & 8.2275e-05                        \\
+    19      & 0.002429962            & 278.0433        & 5.2013                       & 8.2408e-05              & 5.2017                               & 8.2404e-05                        \\
+    20      & 0.002567291            & 294.1923        & 5.5034                       & 8.7065e-05              & 5.5039                               & 8.7061e-05                        \\
+    \hline
+\end{tabular}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fdcurve.png}
+    \caption{Force vs Extension Curve}
+\end{figure}
+
+
+\subsection*{Post-Test Data}
+\begin{itemize}
+    \item Failure Load: \( F_f = 18357.6243 \) N
+    \item Final Diameter: \( D_f = 5.16 \) mm
+    \item Final length of the initially uniform CS: \( l_f = 29.4869 + 10.6134 = 40.1003 \) mm
+    \item Failure surface profile: \textit{The type of fracture was a cup and cone fracture in which the failure surface was oriented at an angle of 45\(^{\circ}\) to the axis of the bar.}
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.2\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{ini.jpeg}
+        \caption{Original}
+    \end{subfigure}
+    \begin{subfigure}{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{final.jpeg}
+        \caption{After Failure}
+    \end{subfigure}
+    \caption{Mild Steel Bar}
+\end{figure}
+
+\subsection*{Plots and Values}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{final_plot.png}
+    \caption{Engineering/True Stress-Strain Curve}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{points.png}
+    \caption{Various Points on the Stress-Strain Curve}
+\end{figure}
+
+$
+    Proportionality\ Limit\ (S_{pl})\ \approx 300\ MPa \\
+    Tangent\ Modulus\ (E_{tan})\ = 315.1938\ GPa\\
+    Yield\ Strength\ (S_y)\ = 312.5066\ MPa\\
+    Ultimate\ Tensile\ Strength\ (S_{uts})\ = 484.5433\ MPa\\
+    Percetnage\ elongation,\ ductility\ = \frac{L_f - L_0}{L_0} \times 100 = \frac {40.1003 - 29.4869}{29.4869} \times 100 = 35.99\%\\
+    Percentage\ area\ reduction\ = \frac{A_0 - A_f}{A_0} \times 100 = \frac{\pi \times D^2 - \pi \times D_f^2}{\pi \times D^2} \times 100 = 60.88\%
+$
+
+
+
+\section{Discuss}
+\begin{enumerate}
+    \item \textbf{Why is steel a popular structural material?\\}
+          \textbf{Answer:} Steel is good at handling tensile stresses.
+          Concrete is the most used construction element but it is bad at handling tensile stresses,
+          therefore it is reinforced with steel to prevent failure due to tensile stresses.
+          Also the thermal expansion coefficient of steel is similar to that of concrete.
+    \item \textbf{If the experiment was in load control (i.e., the force was increased
+              incrementally rather than the displacement), how would the stress-strain
+              curve look like in comparison to what you have obtained. Show
+              schematically in a diagram.}\\
+          \textbf{Answer:} We see in displacement control that there are multiple values of strain for a single value of stress.
+          In load control, the stress-strain curve would be a straight line with a slope equal to the Young's modulus i.e
+          the same as displacement control up to the Yield Point.
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=0.8\textwidth]{load_control.png}
+              \caption{Load Controlled Stress-Strain Curve}
+          \end{figure}
+
+    \item \textbf{Is the tangent modulus that you obtain near to the quoted values of steel
+              (210 GPa)? If not what you think may be the reason for it.}\\
+          \textbf{Answer:} The tangent modulus obtained by performing linear regression on the data till the yield point (since it was hard to deduct the Proportionality Limit) is \textbf{315.2 GPa}.
+          This is considerably higher than the quoted value of 210 GPa. The reason for this discrepancy could be due to the fact that the Proportionality Limit was not accurately determined and the data was not perfectly linear.
+          Other error contributers could be the non-uniformity of the bar, the presence of impurities etc.
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=0.8\textwidth]{tanmod.png}
+          \end{figure}
+
+    \item \textbf{Up to what values of strain there is less than 5\% difference between true
+              stress and engineering stress data?}\\
+          \textbf{Answer:} The difference between true stress and engineering stress is less than 5\% up to a strain of approximately 0.05.
+          Excerpt from the data:
+
+          \begin{tabular}{|p{3.5cm}|p{4cm}|p{3.5cm}|p{3.5cm}|}
+              \hline
+              Engg. Stress, S (N/mm\(^2\)) & Engineering Strain, \(\epsilon\) (mm/mm) & True Stress, \(\sigma\) (N/mm\(^2\)) & \% Difference b/w \(S\) and \(\sigma\) \\
+              \hline
+              415.4689237478027            & 0.049999084339147216                     & 8309.530649194463                    & 4.999908433914707                      \\
+              415.51045310375224           & 0.049996608663508205                     & 8310.7727546134                      & 4.999660866350818                      \\
+              \rowcolor{gray!40}
+              415.5349591651458            & 0.05000837660113474                      & 8309.307108275874                    & 5.000837660113477                      \\
+              415.56376781747116           & 0.05003788122861339                      & 8304.983296931394                    & 5.003788122861329                      \\
+              415.60922562601047           & 0.05004001777060322                      & 8305.53713092737                     & 5.004001777060328                      \\
+              \hline
+          \end{tabular}
+\end{enumerate}
+
+\chapter{Failure Planes in Brittle and Ductile Materials}
+\section{Aim}
+To find the differences between the critical planes of brittle and ductile materials.
+
+\section{Theory}
+Depending on their ability to absorb energy before fracture, materials can be divided in to
+two broad categories: brittle or ductile. Brittle materials such as concrete, ceramics when
+subject to loads behave elastically and when critical conditions are reached they fail
+without any significant permanent deformation i.e., they don’t exhibit any plasticity
+before failure. Even steels with higher carbon content fail in a brittle manner. In contrast,
+ductile material such as most aluminum alloys and low carbon steels have extensive
+plastic deformation before failure. The failure mechanisms are different and therefore
+different theories are applicable.
+\subsection*{Maximum Principal Stress Theory}
+This failure theory applicable for brittle materials states
+that the failure occurs when the maximum principal stress in the material reaches a
+critical value. The principal plane with the maximum tensile stress is predicted to be the
+failure plane.
+\subsection*{Maximum Shear Stress Failure Theory}
+This failure theory applicable for ductile material
+states that the failure occurs when the maximum shear stress in the material reaches a
+critical value. The maximum shear stress plane is the predicted failure plane.
+
+\section{Procedure}
+\begin{enumerate}
+    \item Take three chalk bars and subject them to axial, torsion and 3 point bend load
+          manually.
+    \item Observe the failure planes and their location along the length.
+\end{enumerate}
+
+\section{Plots and Values}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{chalk.jpeg}
+    \caption{Torsional Loading(left) and Axia Loading(right)}
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|p{2.5cm}|p{6cm}|p{4cm}|}
+        \hline
+        Material   & Axial Load                                                                                               & Torsional Load                                        \\
+        \hline
+        Mild Steel & 45\degree to the axis near the edge but here the material's shape makes it near the middle (Cup \& Cone) & Perpendicular to the axis (90\degree) near the middle \\
+        \hline
+        Chalk      & Perpendicular to the axis, near the edge (90\degree)                                                     & 45\degree to the axis near the middle (Helicoidal)    \\
+        \hline
+    \end{tabular}
+    \caption{Location/Axis of Failure Planes}
+    \label{tab:example}
+\end{table}
+
+
+\section{Discuss}
+\begin{enumerate}
+    \item \textbf{The difference between the failure planes you observe in the tensile test of
+              mild steel and the chalk bar.}\\
+          \textbf{Answer:} Mild Steel is a ductile material and chalk is a brittle material. Their failure planes have different characteristics.
+          The failure plane in the tensile test of mild steel is inclined 45\degree to the axis of the bar,
+          while the failure plane in the chalk bar is perpendicular to the axis of the bar.
+    \item \textbf{In your opinion where should the failure occur across the length in each
+              case of loading? Why?}\\
+          \textbf{Answer:} In the case of axial loading, the failure should occur near the middle of the bar as the stress is maximum there.
+          In case of torsional loading also the failure should occur near the middle of the bar as the stress is maximum there.
+    \item \textbf{If the mild steel specimen was loaded in torsion what will be the
+              inclination of the failure plane with the length axis. Justify.}\\
+          \textbf{Answer:} The failure plane in the case of torsional loading of mild steel will be perpendicular to the axis of the bar.
+          This is because the maximum shear stress is perpendicular to the axis of the bar.
+\end{enumerate}
+
+\end{document}
