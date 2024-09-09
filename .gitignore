@@ -3,3 +3,6 @@
 *.fdb_latexmk
 *.aux
 *_files/
+*synctex*
+*tex
+*jpg
